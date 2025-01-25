@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --gradient: linear-gradient(45deg, #ff7c7d, #ffda67);
+    --card: #272524
+}
+
+#About {
+    /* display: flex; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: calc(fit-content 60vh);
+    /* background: var(--gradient); */
+    color: #fdfcfd;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.aboutMeCard {
+    display: flex;
+    align-items: center;
+    width: 75vw;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 44px 30px 44px 20px;
+    background: var(--card);
+    border-radius: 24px;
+    /* opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease; */
+}
+
+/* .aboutMeCard.active {
+    opacity: 1;
+    visibility: visible;
+} */
+
+/* #aboutMeBack {
+    transform: translateX(100%);
+} */
+
+.aboutMeCard img {
+    max-width: 400px;
+    width: 36vw;
+    height: 480px;
+    object-fit: cover;
+    margin-left: -60px;
+    margin-right: 30px;
+    border-radius: inherit;
+    box-shadow: 0 60px 40px rgb(0, 0, 0 / 8%);
+    transition: border-radius 0.3s;
+    border: solid 1px;
+}
+
+.aboutMeCard h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-right: 30px;
+    margin-bottom: 5px;
+    color: #fdfcfd;
+}
+
+.aboutMeCard h3 {
+    font-size: 22px;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.9;
+    /* margin-bottom: 10px; */
+}
+
+.aboutMeCard p {
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    /* margin-bottom: 30px; */
+    opacity: 0.75;
+}
+
+/*
+Media less than 1000px
+*/
+@media (width <= 1000px) {
+    .aboutMeCard img {
+        height: 280px;
+    }
+
+    .aboutMeCard h2 {
+        font-size: 24px;
+    }
+    .aboutMeCard h3 {
+        font-size: 22px;
+    }
+    .aboutMeCard p {
+        font-size: 18px;
+    }
+    #About {
+        /* height: 45vh; */
+    }
+}
+
+/*
+Media less than 600px
+*/
+@media (width <= 600px) {
+    #About {
+        height: 70vh;
+        padding-top: 5vh;
+    }
+
+    .aboutMeCard h2 {
+        font-size: 22px;
+    }
+    .aboutMeCard h3 {
+        font-size: 20px;
+    }
+    .aboutMeCard p {
+        font-size: 14px;
+    }
+
+    .aboutMeCard {
+        margin: 0 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 60px;
+        width: 100%;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .aboutMeCard h2 {
+        margin-right: 0;
+        font-size: 26px;
+    }
+
+    /* .aboutMeCard img {
+        margin: -100px 0 30px 0;
+        width: 100%;
+        max-width: 1000px;
+        height: 250px;
+    } */
+
+    .aboutMeCard p {
+        max-width: 360px;
+    }
+
+    .socials {
+        justify-content: center;
+    }
+}
+
+@media (width <= 600px) {
+    .aboutMeCard img  {
+        height: 50vw;
+        width: 50vw;
+        border-radius: 50%;
+        border: 5px solid;
+        box-shadow: none;
+        margin: -140px 0 30px 0;
+    }
+}
+
+
+@media (width <= 400px) {
+    #About {
+        height: 70vh;
+        padding-top: 5vh;
+    }
+}
+
+@media (width <= 380px) {
+    #About {
+        height: 80vh;
+        padding-top: 5vh;
+    }
+}
+
+
+/*
+Social buttons
+*/
+.socials {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 30px;
+}
+
+
+.socials ul {
+    font-family: 'Source sans pro' ,sans-serif;
+    display: flex;
+    align-content: center;
+}
+
+.socials ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.socials ul li .fab {
+    font-size: 30px;
+    line-height: 60px;
+    transition: .3s;
+    color: #000;
+}
+
+.socials ul li .fab:hover {
+    color: #fff;
+}
+
+.socials ul li a {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.socials ul li a:hover {
+    transform: translate(0, -10%);
+}
+
+.socials ul li:nth-child(1) a:hover {
+    background-color: #0077b5;
+}
