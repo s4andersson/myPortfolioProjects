@@ -5,14 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My Portfolio</title>
         <link rel="stylesheet" href="index.css">
-        <!-- <link rel="stylesheet" href="aboutMe.css"> -->
+        <link rel="stylesheet" href="newAboutMe/aboutMeNew.css">
 
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
-
-        
     </head>
-
-    <body>
+<div class="wrapper">
+    <body class="dark-mode">
         <header>
             <h1>Welcome to My Page</h1>
 
@@ -21,8 +19,10 @@
                     <li><a href="#About">About Me</a></li>
                     <li><a href="#Projects">Projects</a></li>
                     <li><a href="#Contact">Contact</a></li>
+                    <li><a class="darkModeBtn" onclick="toggleMode()">DarkMode</a></li>
                 </ul>
             </nav>
+            
         </header>
 
         <main>
@@ -35,6 +35,7 @@
             <p>&copy; 2025 My Portfolio. All rights reserved.</p>
         </footer>
         <script src="javascript/index.js"></script>
-        <!-- <script src="javascript/aboutMe.js" defer></script> -->
+        <!-- <script src="newAboutMe/aboutMeNew.js"></script> -->
     </body>
+</div>
 </html>

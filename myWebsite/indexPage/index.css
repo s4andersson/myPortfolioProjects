@@ -9,8 +9,33 @@ body {
     margin: 0;
     padding: 0;
     /* background: linear-gradient(60deg, #140aaa, #e02626); */
-    background-color: #dbdbd9;
-    color: #333;
+    /* background-color: #dbdbd9; */
+    color: #333;    
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+body.light-mode {
+    /* background: repeating-linear-gradient(135deg, #7e7e5d, #bbdefb); */
+    background-color: #bbdefb;
+    /* color: #4e342e; */
+    /* background-size: cover; */
+    /* height: 100vh; */
+}
+
+body.dark-mode {
+    /* background: linear-gradient(135deg, #0a0a0a, #1a237e); */
+    /* background-color: #1a237e; */
+    background-color: #10154d;
+    /* color: #e0e0e0; */
 }
 
 header {
@@ -21,6 +46,14 @@ header {
     position: relative;
     align-items: center;
 }
+
+header h1 {
+    text-shadow: 
+    0 0 10px,
+    0 0 20px
+    ;
+}
+
 
 h1 {
     margin: 0;
@@ -43,6 +76,9 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff6347;
+    text-shadow: 
+    0 0 10px,
+    0 0 20px;
     text-decoration: underline;
 }
 
@@ -55,9 +91,13 @@ h2 {
     color: #333;
 }
 
+.dark-mode h2 {
+    color: #e0e0e0;
+}
+
 .project {
     text-align: left;
-    max-width: 1440px;
+    max-width: 1200px;
     background-color: #fff;
     padding: 15px;
     margin: 15px auto;
@@ -70,7 +110,7 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
