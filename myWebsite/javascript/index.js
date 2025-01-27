@@ -21,7 +21,7 @@ function loadComponent(url, elementId, scriptPath) {
 
 window.onload = function () {
     loadComponent(
-        '/myWebsite/aboutMe/aboutMe.html',
+        'myWebsite/aboutMe/aboutMe.html',
         'myAboutMe',
         'myWebsite/aboutMe/aboutMe.js'
     );
