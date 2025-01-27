@@ -21,16 +21,16 @@ function loadComponent(url, elementId, scriptPath) {
 
 window.onload = function () {
     loadComponent(
-        '/myWebsite/aboutMe/aboutMe.html',
+        'myWebsite/aboutMe/aboutMe.html',
         'myAboutMe',
         'myWebsite/aboutMe/aboutMe.js'
     );
     loadComponent(
-        '/myWebsite/projects/projects.html', 
+        'myWebsite/projects/projects.html', 
         'myProjects'
     );
     loadComponent(
-        '/myWebsite/contacts/contacts.html',
+        'myWebsite/contacts/contacts.html',
         'myContacts'
     );
 };
