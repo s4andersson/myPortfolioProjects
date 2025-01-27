@@ -1,0 +1,21 @@
+.project {
+    text-align: left;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+}
+
+#Projects.dark-mode h2 {
+    color: #fff;
+}
+
+#Projects.light-mode h2 {
+    color: #333;
+}
+
+.project p {
+    color: #333;
+}
