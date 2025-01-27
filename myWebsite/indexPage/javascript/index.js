@@ -20,6 +20,6 @@ function loadComponent(url, elementId, scriptPath) {
 }
 
 window.onload = function () {
-    loadComponent('newAboutMe/aboutMeNew.html', 'myAboutMe', 'newAboutMe/aboutMeNew.js');
-    loadComponent('projects.html', 'myProjects', 'javascript/index.js')
+    loadComponent('myWebsite/indexPage/newAboutMe/aboutMeNew.html', 'myAboutMe', 'newAboutMe/aboutMeNew.js');
+    loadComponent('myWebsite/indexPage/projects.html', 'myProjects')
 };
