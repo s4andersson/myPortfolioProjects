@@ -37,19 +37,34 @@ window.onload = function () {
 
 
 function toggleMode() {
-    document.body.classList.toggle('light-mode');
-    document.body.classList.toggle('dark-mode');
-    document.getElementById('newAbout').classList.toggle('light-mode');
-    document.getElementById('newAbout').classList.toggle('dark-mode');
 
-    document.getElementById('Contact').classList.toggle('light-mode');
-    document.getElementById('Contact').classList.toggle('dark-mode');
+    const elementsToToggle = [
+        document.body,
+        document.getElementById('newAbout'),
+        document.getElementById('Contact'),
+        document.getElementById('Projects'),
+        ...document.querySelectorAll('.about-cardContainer')
+    ];
 
-    document.getElementById('Projects').classList.toggle('light-mode');
-    document.getElementById('Projects').classList.toggle('dark-mode');
-
-    document.querySelectorAll('.about-cardContainer').forEach(card => {
-        card.classList.toggle('light-mode');
-        card.classList.toggle('dark-mode');
+    elementsToToggle.forEach( element => {
+        element.classList.toggle('light-mode');
+        element.classList.toggle('dark-mode');
     });
+
+    
+    // document.body.classList.toggle('light-mode');
+    // document.body.classList.toggle('dark-mode');
+    // document.getElementById('newAbout').classList.toggle('light-mode');
+    // document.getElementById('newAbout').classList.toggle('dark-mode');
+
+    // document.getElementById('Contact').classList.toggle('light-mode');
+    // document.getElementById('Contact').classList.toggle('dark-mode');
+
+    // document.getElementById('Projects').classList.toggle('light-mode');
+    // document.getElementById('Projects').classList.toggle('dark-mode');
+
+    // document.querySelectorAll('.about-cardContainer').forEach(card => {
+    //     card.classList.toggle('light-mode');
+    //     card.classList.toggle('dark-mode');
+    // });
 }
